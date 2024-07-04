@@ -7,9 +7,9 @@ body {
     color: blue;
 }
 
-.body-container {
+#body-container {
     width: 700px;
-    padding: 20px;
+   
 }
 
 .card {
@@ -20,12 +20,13 @@ body {
 
 #instagram-wrapper {
     padding-top: 70px;
+    margin: 10px;
 
 }
 
 .navbar {
     background-color: #124E66;
-    height: 4rem;
+    
 }
 
 #about {
