@@ -1,5 +1,6 @@
 body {
-    background-color: #D3D9D4;
+    background-color: black;
+    color: white;
 }
 
 
@@ -15,7 +16,8 @@ body {
 .card {
     padding-top: 70px;
     border: none;
-    background-color: #D3D9D4;
+    background-color: black;
+    color: white;
 }
 
 #instagram-wrapper {
@@ -25,6 +27,6 @@ body {
 }
 
 .navbar {
-    background-color: #124E66;
+    background-color: black;
     
 }
