@@ -1,32 +1,46 @@
-body {
-    background-color: black;
-    color: white;
-}
-
-
-.title {
-    color: blue;
-}
-
-#body-container {
-    max-width: 700px;
-   
+* {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .card {
-    padding-top: 70px;
+    padding: 70px 11px 70px 11px;
+   
     border: none;
-    background-color: black;
+    max-width: 600px;
+}
+
+footer {
+    height: 350px;
+    background-color: #065B7A;
     color: white;
 }
 
-#instagram-wrapper {
-    
-    margin: 10px;
 
+#about {
+    background-color:#A4E6EC;
+}
+
+#about-section {
+    background-color:#A4E6EC;
+}
+
+#calendar {
+    background-color: #F0A59F;
+}
+
+#calendar-section {
+    background-color: #F0A59F;
+}
+
+#videos {
+    background-color: #FDFD96;
+}
+
+#videos-section {
+    background-color: #FDFD96;
 }
 
 .navbar {
-    background-color: black;
-    
+    background-color: #065B7A;
+    color: white;
 }
