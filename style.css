@@ -10,7 +10,7 @@
 }
 
 footer {
-    height: 350px;
+    height: 400px;
     background-color: #065B7A;
     color: white;
 }
@@ -45,6 +45,6 @@ footer {
     color: white;
 }
 
-svg:hover {
-    fill: black;
+.d-flex {
+    gap: 0px;
 }
