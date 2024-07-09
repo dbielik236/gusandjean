@@ -44,3 +44,7 @@ footer {
     background-color: #065B7A;
     color: white;
 }
+
+svg:hover {
+    fill: black;
+}
