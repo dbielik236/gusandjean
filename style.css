@@ -2,6 +2,9 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
+  
+
 .card {
     padding: 70px 11px 70px 11px;
    
@@ -41,7 +44,7 @@ footer {
 }
 
 .navbar {
-    background-color: #065B7A;
+    background-color: #df9d9b;
     color: white;
 }
 
