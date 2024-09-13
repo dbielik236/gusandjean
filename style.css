@@ -35,11 +35,11 @@ footer {
     background-color: #FDFD96;
 }
 
-#videos {
+#media {
     background-color: #F0A59F;
 }
 
-#videos-section {
+#media-section {
     background-color: #F0A59F;
 }
 
@@ -81,5 +81,8 @@ footer {
     }
   }
   
-  
+  .youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
   
