@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const updateNavbarAttributes = () => {
     const navbarNav = document.getElementById('navbarNav');
     if (navbarNav) {
-      if (window.innerWidth > 900) {
+      if (window.innerWidth > 768) {
         navbarNav.removeAttribute('data-bs-toggle');
         navbarNav.removeAttribute('data-bs-target');
       } else {
