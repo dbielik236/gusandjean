@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
+  // Function to update navbar attributes based on window size
+  const updateNavbarAttributes = () => {
+    const navbarNav = document.getElementById('navbarNav');
+    if (navbarNav) {
+      if (window.innerWidth > 900) {
+        navbarNav.removeAttribute('data-bs-toggle');
+        navbarNav.removeAttribute('data-bs-target');
+      } else {
+        navbarNav.setAttribute('data-bs-toggle', 'collapse');
+        navbarNav.setAttribute('data-bs-target', '#navbarNav');
+      }
+    }
+  };
+
+  // Run the function on page load
+  updateNavbarAttributes();
+
+  // Add event listener for window resize
+  window.addEventListener('resize', updateNavbarAttributes);
+});
+
 const topDiv = document.getElementById("top");
 const topTab = document.getElementById("top-tab");
 const bottomTopTab = document.getElementById("bottom-top-tab");
