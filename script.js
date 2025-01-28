@@ -51,3 +51,11 @@ scroll(calDiv, bottomCalTab);
 scroll(aboutDiv, bottomAboutTab);
 scroll(topDiv, bottomTopTab);
 scroll(vidDiv, bottomVidTab);
+
+
+var downloadAttrSupported = ("download" in document.createElement("a"))
+const download = document.getElementById("download-picture")
+if (!downloadAttrSupported){
+  download.innerText("No downloads here")
+   $('img.media').unwrap();
+}
