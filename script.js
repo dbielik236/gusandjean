@@ -51,3 +51,29 @@ scroll(calDiv, bottomCalTab);
 scroll(aboutDiv, bottomAboutTab);
 scroll(topDiv, bottomTopTab);
 scroll(vidDiv, bottomVidTab);
+
+
+
+function updateDownloadAttribute() {
+  
+  const download = document.getElementById("download-picture");
+  if (window.innerWidth < 1100) {
+      
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("a > img.photos").forEach(img => {
+          const anchor = img.parentNode; // Get the parent <a> element
+          const column = anchor.parentNode; // Get the parent .column
+  
+          column.insertBefore(img, anchor); // Move the <img> out of the <a>
+          anchor.remove(); // Remove the <a> wrapper
+        });
+    });
+      download.innerText="";
+  }
+}
+
+// Run on page load
+updateDownloadAttribute();
+
+// Run on window resize
+window.addEventListener('resize', updateDownloadAttribute);
