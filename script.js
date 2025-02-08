@@ -32,8 +32,10 @@ const bottomCalTab = document.getElementById("bottom-calendar-tab");
 const aboutDiv = document.getElementById("about");
 const aboutTab = document.getElementById("about-tab");
 const bottomAboutTab = document.getElementById("bottom-about-tab");
-const contDiv = document.getElementById("footer");
+const contDiv = document.getElementById("contact");
 const contTab = document.getElementById("contact-tab");
+const bookButton1 = document.getElementById("booking-button-1");
+const bookButton2 = document.getElementById("booking-button-2");
 
 
 function scroll(div, tab) {
@@ -51,6 +53,8 @@ scroll(calDiv, bottomCalTab);
 scroll(aboutDiv, bottomAboutTab);
 scroll(topDiv, bottomTopTab);
 scroll(vidDiv, bottomVidTab);
+scroll(contDiv, bookButton1);
+scroll(contDiv, bookButton2);
 
 
 
@@ -77,3 +81,34 @@ updateDownloadAttribute();
 
 // Run on window resize
 window.addEventListener('resize', updateDownloadAttribute);
+
+window.onload = function() {
+  emailjs.init("ODJ1kRiFgD7_SwxD9"); // Replace with your EmailJS Public Key
+};
+
+function sendEmail(event) {
+  event.preventDefault();
+
+  let form = document.getElementById("contact-form"); // Get the form element
+  let responseMessage = document.getElementById("response-message"); // Get the response div
+
+  let templateParams = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+  };
+
+  emailjs.send("service_gj83vl5", "template_h8vmcw1", templateParams)
+      .then(response => {
+          // Hide the form
+          form.style.display = "none";
+          
+          // Show the success message
+          responseMessage.innerHTML = "<p>Thank you for your message! We'll get back with you shortly.</p>";
+          responseMessage.style.display = "block"; // Make sure the div is visible
+      })
+      .catch(error => {
+          responseMessage.innerHTML = "<p style='color: red;'>Error sending email. Please try again.</p>";
+          responseMessage.style.display = "block";
+      });
+}

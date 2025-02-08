@@ -112,19 +112,21 @@
           Dua Lipa, and Harry Styles, Gus and Jean's music resonates with audiences of all ages.</p>
 
         -->
-        <div class="text-center">
-          <a href="mailto: gusandjeanmusic@gmail.com">      
-            <button class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 40px">
-              Book us!
-            </button>
-          </a>    
-        </div>
+        
         
       <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank">
-        <div class="text-center" style="padding-top: 60px;">
-          <img src="logo-large.png" alt="G&J logo" class="mx-auto" style=" width: 300px; height: auto;">
+        <div class="text-center" style="padding-top: 20px;">
+          <img src="logo-large.png" alt="G&J logo" class="mx-auto" style=" width: 150px; height: auto;">
         </div>  
       </a>      
+
+      <div class="text-center">
+              
+        <button id="booking-button-1" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 40px">
+          Book us!
+        </button>
+         
+    </div>
 <!--
         <div class="text-center">
           <a href="https://instagram.com/gusandjeanmusic" style="text-decoration: none;" target="_blank">
@@ -302,15 +304,13 @@
           <img class="venue-logo" src="mast-road.png">
         </div>
         <div class="text-center">
-          <a href="mailto: gusandjeanmusic@gmail.com">      
-            <button class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 40px">
+               
+            <button id="booking-button-2" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 40px">
               Book us!
             </button>
-          </a>    
+           
         </div>
-        <div class="text-center" style="padding-top: 10px;">
-        <a class="mx-auto link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> gusandjeanmusic@gmail.com </a>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -386,12 +386,34 @@
         </div>
     </div>
     
-
+   </div>
   </div>
+
   
-
-
-  </div>
+  
+  <div id="contact-section">
+    <div id="contact" class="card mx-auto" style="padding-top: 0px;">
+      <div class="card-body text-center">
+        <h1 class="card-title mx-auto" style="font-size: 2.5rem; font-weight: bold;">
+          Booking/Contact</h1>
+        <p>gusandjeanmusic@gmail.com</p>
+        <div style="padding: 0 10% 0 10%">
+          <form id="contact-form" onsubmit="sendEmail(event)">
+             
+            <input type="email" id="email" class="form-control mb-2" required placeholder="Email address">
+            <input type="text" id="name" class="form-control mb-2" required placeholder="Name">
+            <textarea id="message" class="form-control mb-3" rows="4" required placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 20px;">Send</button>
+          </form>
+        </div>
+        <!-- Hidden div for success message -->
+        <div id="response-message" style="display: none;"></div>
+      </div>
+    </div>
+  </div>    
+    
+   
+  
  
   <footer class="d-flex justify-content-center align-items-center">
     <div id="footer" class="d-flex flex-column align-items-center">
@@ -431,12 +453,13 @@
       <a id="bottom-calendar-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px;">Schedule</a>
       <a id="bottom-media-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px 0 20px 0 ;">Media</a>
       
-      <p><i>Booking:</i> <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href= "mailto: gusandjeanmusic@gmail.com"> gusandjeanmusic@gmail.com </a></p>
+      <p class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Booking: gusandjeanmusic@gmail.com</p>
     </div>
 
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
 </body>
