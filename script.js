@@ -92,6 +92,7 @@ function sendEmail(event) {
   let form = document.getElementById("contact-form"); // Get the form element
   let responseMessage = document.getElementById("response-message"); // Get the response div
 
+
   let templateParams = {
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
@@ -104,8 +105,9 @@ function sendEmail(event) {
           form.style.display = "none";
           
           // Show the success message
-          responseMessage.innerHTML = "<p>Thank you for your message! We'll get back with you shortly.</p>";
+          
           responseMessage.style.display = "block"; // Make sure the div is visible
+          
       })
       .catch(error => {
           responseMessage.innerHTML = "<p style='color: red;'>Error sending email. Please try again.</p>";

@@ -202,7 +202,7 @@
           </div>  
           <div class="d-flex flex-column mx-2" style="width: 80%;">
             <a href="https://luksbarandgrill.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Luk's Pub and Grill</b></a>
+            <p class="card-text"><b>Luk's Bar and Grill</b></a>
               <br>Hudson, NH</p>
             <p class="card-text"><em>7:00-10:00pm</em></p>
           </div>
@@ -292,23 +292,51 @@
         <hr>
         <div class="d-flex" style="padding: 10px 10px 10px 10px; border: solid; margin: 10px 0px 10px 0px; border-width: thin; border-radius: 5px; background-color: white;">
           <div class="d-flex flex-column" style="width:30%; text-align: center;">
+            <p class="card-text" style="margin-bottom: 0;">SUN</p>
+            <h1 class="card-text">24</h1>
+          </div>  
+          <div class="d-flex flex-column mx-2" style="width: 80%;">
+            <a href="https://www.averillhousevineyard.com" style="color: black;" target="_blank" >
+            <p class="card-text"><b>Averill House Vineyard</b></a>
+              <br>Brookline, NH</p>
+            <p class="card-text"><em>1:30-3:30pm</em></p>
+          </div>
+          <img class="venue-logo" src="averill-house.png">
+        </div>
+        <div class="d-flex" style="padding: 10px 10px 10px 10px; border: solid; margin: 10px 0px 10px 0px; border-width: thin; border-radius: 5px; background-color: white;">
+          <div class="d-flex flex-column" style="width:30%; text-align: center;">
             <p class="card-text" style="margin-bottom: 0;">THU</p>
             <h1 class="card-text">28</h1>
           </div>  
           <div class="d-flex flex-column mx-2" style="width: 80%;">
             <a href="https://www.jacquesflowers.com/page/mast-road-community-market" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Mast Road Community Market</b></a>
-              <br>Goffstown, NH</p>
+            <p class="card-text"><b>Mast Rd Community Market</b></a>
+              <br>Pinardville, NH</p>
             <p class="card-text"><em>3:30-6:30pm</em></p>
           </div>
           <img class="venue-logo" src="mast-road.png">
         </div>
+        <h5 class="card-subtitle mb-2 text-muted " style="padding-top: 20px;">October:</h5>
+        <hr>
+        <div class="d-flex" style="padding: 10px 10px 10px 10px; border: solid; margin: 10px 0px 10px 0px; border-width: thin; border-radius: 5px; background-color: white;">
+          <div class="d-flex flex-column" style="width:30%; text-align: center;">
+            <p class="card-text" style="margin-bottom: 0;">SUN</p>
+            <h1 class="card-text">5</h1>
+          </div>  
+          <div class="d-flex flex-column mx-2" style="width: 80%;">
+            <a href="https://www.averillhousevineyard.com" style="color: black;" target="_blank" >
+            <p class="card-text"><b>Averill House Vineyard</b></a>
+              <br>Brookline, NH</p>
+            <p class="card-text"><em>1:30-3:30pm</em></p>
+          </div>
+          <img class="venue-logo" src="averill-house.png">
+        </div>
+
+
         <div class="text-center">
-               
-            <button id="booking-button-2" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 40px">
-              Book us!
-            </button>
-           
+          <button id="booking-button-2" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 40px">
+            Book us!
+          </button> 
         </div>
         
       </div>
@@ -392,22 +420,25 @@
   
   
   <div id="contact-section">
-    <div id="contact" class="card mx-auto" style="padding-top: 0px;">
+    <div id="contact" class="card mx-auto">
       <div class="card-body text-center">
         <h1 class="card-title mx-auto" style="font-size: 2.5rem; font-weight: bold;">
           Booking</h1>
-        <p>gusandjeanmusic@gmail.com</p>
-        <div style="padding: 0 10% 0 10%">
+        <p>Email us at gusandjeanmusic@gmail.com or fill out the form below.</p>
+        <div >
           <form id="contact-form" onsubmit="sendEmail(event)">
              
-            <input type="email" id="email" class="form-control mb-2" required placeholder="Email address">
-            <input type="text" id="name" class="form-control mb-2" required placeholder="Name">
-            <textarea id="message" class="form-control mb-3" rows="4" required placeholder="Message"></textarea>
+            <input type="email" id="email" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;"  placeholder="Email address">
+            <input type="text" id="name" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Name">
+            <textarea id="message" class="form-control mb-3" rows="4" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Message"></textarea>
             <button type="submit" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 20px;">Send</button>
           </form>
         </div>
         <!-- Hidden div for success message -->
-        <div id="response-message" style="display: none;"></div>
+        <div id="response-message" style="padding: 30px 20px 40px 20px; display: none; background-color:#065B7A; color: white;" class="card">
+          <p>Thank you for your message! We'll get back to you shortly.</p>
+          <img id="response-logo" src="logo-large.png" alt="G&J logo" class="mx-auto" style="width: 150px; height: auto;">
+        </div>
       </div>
     </div>
   </div>    
